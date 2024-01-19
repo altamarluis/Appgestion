@@ -1,0 +1,50 @@
+/* headerStyles.css */
+
+/* Estilos para la barra de navegación */
+.navbar {
+    height: 100px;
+    background-color: #343a40; /* Fondo de la barra de navegación */
+    width: 100%; /* Ancho del 100% para ocupar toda la pantalla */
+    position: fixed; /* Posición fija para que permanezca en la parte superior */
+    top: 0; /* Se sitúa en la parte superior */
+    z-index: 1000; /* Establece un índice de apilamiento alto para asegurarse de que esté sobre otros elementos */
+  }
+  
+  /* Estilos para la imagen en la marca de la barra de navegación */
+  .navbar-brand {
+    position: relative;
+  }
+  
+  .navbar-brand img {
+    width: 230px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto; /* Altura ajustada automáticamente */
+    position: fixed;
+    top: -10px; /* Ajusta este valor para controlar cuánto de la imagen sobresale hacia arriba */
+    left: 15px;
+    transition: box-shadow 0.3s ease; /* Agrega una transición para que la sombra cambie suavemente */
+  }
+  
+
+
+  /* Estilos para el menú desplegable */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    background-color: #1583f0; /* Fondo gris oscuro del menú desplegable al pasar el mouse */
+  }
+  
+  /* Estilos para las opciones del menú desplegable */
+  .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: white; /* Color del texto en las opciones */
+  }
+  
+  .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #555; /* Fondo gris claro de las opciones al pasar el mouse */
+    color: #242424; /* Cambia el color del texto cuando se pasa el mouse */
+  }
+
+  .lado_derecho {
+    margin-left: auto;
+  }
+
+  .Nav.Link:hover {
+    text-decoration: underline;
+  }
