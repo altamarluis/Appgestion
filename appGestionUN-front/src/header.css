@@ -24,7 +24,9 @@
     transition: box-shadow 0.3s ease; /* Agrega una transición para que la sombra cambie suavemente */
   }
   
-
+.navbar-nav {
+    width: 10000px;
+}
 
   /* Estilos para el menú desplegable */
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
@@ -45,6 +47,6 @@
     margin-left: auto;
   }
 
-  .Nav.Link:hover {
+  #link:hover {
     text-decoration: underline;
   }
