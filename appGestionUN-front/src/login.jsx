@@ -18,20 +18,24 @@ const Login = () => {
             <h2 className="login-title">Iniciar sesión</h2>
             <Form  onSubmit={handleLogin}>
               <Form.Group controlId="formBasicEmail" className='input-group mb-3'>
-                <Envelope className="icon"/>
+                <span class='input-group-addon span-icon'>
+                    <Envelope className="icon"/>
+                </span>
                 <Form.Control type="email" placeholder="Ingresa tu email" required />
               </Form.Group>
 
               <Form.Group controlId="formBasicPassword" className='input-group mb-3'>
+              <span class='input-group-addon span-icon'>
                 <Lock className="icon" />
+              </span>
                 <Form.Control type="password" placeholder="Ingresa tu contraseña" required />
               </Form.Group>
 
-              <span className="forgot-password-link">
+              <span className="forgot-password-link mb-3">
                 Olvidaste tu contraseña?
               </span>
 
-              <Button variant="primary" type="submit" block>
+              <Button variant="primary" type="submit" className="custom-btn">
                 Iniciar sesión
               </Button>
             </Form>

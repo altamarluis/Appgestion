@@ -1,6 +1,6 @@
 
 .login-form {
-    background-color: #fff;
+    background-color: #c4c5ba74;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 8px;
@@ -21,9 +21,36 @@
     text-align: right;
     color: #007bff;
     font-size: small;
+    cursor: pointer;
+  }
+
+  .forgot-password-link:hover{
+    text-decoration: underline;
   }
 
   .icon {
-    margin-right: 8px;
-    vertical-align: middle;
+    align-self: center;
+  }
+
+  .span-icon {
+    background-color: #7f7f7f;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-btn {
+    background-color: #7f7f7f !important; /* Cambia el color del botón a gris (#7f7f7f) */
+    border-color: #7f7f7f !important; /* Cambia el color del borde del botón a gris (#7f7f7f) */
+  }
+  
+  .custom-btn:hover {
+    background-color: #6b6b6b !important; /* Cambia el color del botón al pasar el mouse (#6b6b6b) */
+    border-color: #6b6b6b !important; /* Cambia el color del borde del botón al pasar el mouse (#6b6b6b) */
+  }
+
+  .form-control:focus {
+    border-color: #7f7f7f !important; /* Cambia el color del borde al seleccionar el campo */
+    box-shadow: none !important; /* Elimina la sombra predeterminada al seleccionar el campo */
   }
