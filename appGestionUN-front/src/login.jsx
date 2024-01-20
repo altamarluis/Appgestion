@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { Envelope, Lock } from 'react-bootstrap-icons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
+const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
     // Lógica de inicio de sesión aquí
+    // Simulando un inicio de sesión exitoso
+    const loginSuccessful = true;
+
+    if (loginSuccessful) {
+      // Cambiar la ruta a /main después de un inicio de sesión exitoso
+      navigate('/main');
+    }
+     
   };
+
+  // Si el usuario está autenticado, renderiza el menú principal
 
   return (
     <Container>
@@ -18,22 +30,27 @@ const Login = () => {
             <h2 className="login-title">Iniciar sesión</h2>
             <Form  onSubmit={handleLogin}>
               <Form.Group controlId="formBasicEmail" className='input-group mb-3'>
-                <span class='input-group-addon span-icon'>
+                <span className='input-group-addon span-icon'>
                     <Envelope className="icon"/>
                 </span>
                 <Form.Control type="email" placeholder="Ingresa tu email" required />
               </Form.Group>
 
               <Form.Group controlId="formBasicPassword" className='input-group mb-3'>
-              <span class='input-group-addon span-icon'>
+              <span className='input-group-addon span-icon'>
                 <Lock className="icon" />
               </span>
                 <Form.Control type="password" placeholder="Ingresa tu contraseña" required />
               </Form.Group>
 
-              <span className="forgot-password-link mb-3">
-                Olvidaste tu contraseña?
-              </span>
+              <div className="login-links">
+                <span className="forgot-password-link mb-3">
+                  <Link to="/registro">Regístrate</Link>
+                </span>
+                <span className="forgot-password-link mb-3">
+                <Link to="/forgotpassword">Olvidaste tu contraseña?</Link>
+                </span>
+              </div>
 
               <Button variant="primary" type="submit" className="custom-btn">
                 Iniciar sesión
